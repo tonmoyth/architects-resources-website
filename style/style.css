@@ -1,7 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-.work-sans-font> {
+.work-sans-font{
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    margin: 0px 150px;
   }
+*{
+    margin: 0;
+    padding: 0;
+}
+/* comon style */
+.color{
+    color: #424242;
+}
+.margin-bottom{
+    margin-bottom: 15px;
+}
+.btn-praimary{
+    background-color: #FF900E;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.btn-praimary:hover{
+    background-color: #ce6f02;
+}
+/* style header area */
+.header{
+    /* background-color: #727272; */
+}
+.header .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.header .nav-bar .item{
+    display: flex;
+    column-gap: 25px;
+    list-style: none;
+}
+.header .nav-bar .item a{
+    text-decoration: none;
+    font-weight: 500px;
+}
+.header .nav-bar .item a:hover{
+    text-decoration: underline;
+}
+
+/* style hero are */
+.hero-section{
+    margin: 20px 0px;
+    padding: 30px 0px;
+}
+.hero-section .main-tittle{
+    font-size: 4rem;
+    font-weight: 1.70rem;
+}
+.hero-section .new-tittle-style{
+    color: #FF900E;
+}
+.hero-section .tittle-are{
+    margin: 0px auto;
+    text-align: center;
+}
+.hero-section .img-area img{
+    width: 100%;
+}
+
+
+
+
+
+/* responsive area */
+@media screen and (max-width: 576px){
+    .header .nav-bar, .header .nav-bar .item{
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+    }
+    .work-sans-font{
+        margin: 15px 15px;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:992px){
+    .work-sans-font{
+        margin: 15px 15px;
+    }
+    .hero-section .img-area{
+        margin-top: 50px;
+    }
+    
+}
+@media screen and (min-width: 992px) and (max-width:1200px){
+    .work-sans-font{
+        margin: 50px 50px;
+    }
+    .hero-section .img-area{
+        margin-top: 50px;
+    }
+    
+}
