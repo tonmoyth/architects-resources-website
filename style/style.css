@@ -95,6 +95,34 @@
 .discous-feature .tittle-area .quick-list{
     color: #727272;
 }
+
+/* style some-facts */
+.some-facts{
+    margin: 80px 0px;
+}
+.some-facts .some-facts-name{
+    margin-bottom: 15px;
+}
+.some-facts .card-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 100px;
+    
+}
+.some-facts .card-container .card{
+    border: 1px solid #FF900E;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 15px;
+}
+
 /* responsive area */
 @media screen and (max-width: 576px){
     .header .nav-bar, .header .nav-bar .item{
@@ -127,6 +155,17 @@
     .discous-feature .img-section img{
         width: 100%;
     }
+    .some-facts{
+        text-align: center;
+    }
+    .some-facts .card-container{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
+    }
+    .some-facts .card-container .card{
+        width: 65%;
+        margin: 20px auto;
+    }
 }
 @media screen and (min-width: 576px) and (max-width:992px){
     .work-sans-font{
@@ -144,6 +183,25 @@
         text-align: center;
         row-gap: 20px;
     }
+    .some-facts .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        
+    }
+    .discous-feature .img-section img{
+        width: 100%;
+    }
+    .some-facts{
+        text-align: center;
+    }
+    .some-facts .card-container{
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 20px;
+    }
+    .some-facts .card-container .card{
+        width: 80%;
+        margin: 20px auto;
+    }
 }
 @media screen and (min-width: 992px) and (max-width:1200px){
     .work-sans-font{
@@ -157,9 +215,27 @@
         flex-direction: column;
         
     }
+    .discous-feature .img-section img{
+        width: 100%;
+        margin: 20px auto;
+    }
     .discous-feature .tittle-area{
         text-align: center;
         row-gap: 20px;
     }
+    .some-facts{
+        text-align: center;
+    }
+    .some-facts .card-container{
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 20px;
+    }
+    /* .some-facts .card-container .card{
+        width: 80%;
+        margin: 20px auto;
+    } */
     
-}
+}.some-facts .card-container .card{
+        width: 80%;
+        margin: 20px auto;
+    }
