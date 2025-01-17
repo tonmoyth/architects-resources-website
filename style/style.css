@@ -3,7 +3,7 @@
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    margin: 0px 150px;
+    margin: 0px 100px;
   }
 *{
     margin: 0;
@@ -69,11 +69,32 @@
 .hero-section .img-area img{
     width: 100%;
 }
-
-
-
-
-
+/* discous-feature style */
+.discous-feature{
+    display: flex;
+    column-gap: 30px;
+    /* align-items: center; */
+}
+.discous-feature .img-section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+}
+.discous-feature .tittle-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+.discous-feature .tittle-area .tittle{
+    font-size: 2.8rem;
+}
+.discous-feature .tittle-area .Features{
+    color: #FF900E;
+}
+.discous-feature .tittle-area .quick-list{
+    color: #727272;
+}
 /* responsive area */
 @media screen and (max-width: 576px){
     .header .nav-bar, .header .nav-bar .item{
@@ -89,6 +110,23 @@
         flex-direction: column;
         flex-direction: column-reverse;
     }
+    .discous-feature{
+        display: flex;
+        row-gap: 30px;
+        flex-direction: column;
+        
+    }
+    .discous-feature .img-section{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
+    }
+    .discous-feature .tittle-area{
+        text-align: center;
+        row-gap: 20px;
+    }
+    .discous-feature .img-section img{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 576px) and (max-width:992px){
     .work-sans-font{
@@ -97,7 +135,15 @@
     .hero-section .img-area{
         margin-top: 50px;
     }
-    
+    .discous-feature{
+        row-gap: 30px;
+        flex-direction: column;
+        
+    }
+    .discous-feature .tittle-area{
+        text-align: center;
+        row-gap: 20px;
+    }
 }
 @media screen and (min-width: 992px) and (max-width:1200px){
     .work-sans-font{
@@ -105,6 +151,15 @@
     }
     .hero-section .img-area{
         margin-top: 50px;
+    }
+    .discous-feature{
+        row-gap: 30px;
+        flex-direction: column;
+        
+    }
+    .discous-feature .tittle-area{
+        text-align: center;
+        row-gap: 20px;
     }
     
 }
