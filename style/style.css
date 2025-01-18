@@ -178,6 +178,13 @@
 .features-you-will .Experience{
     margin-top: 10px;
 }
+
+/* style footer section */
+.footer{
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 30px 0px;
+}
 /* responsive area */
 @media screen and (max-width: 576px){
     .header .nav-bar, .header .nav-bar .item{
@@ -328,21 +335,4 @@
         margin: 10px auto;
     }
     
-}
-@media screen and (min-width:1200px) and (max-width:1400px){
-    .some-facts .card-container, .our-sponsors .sponsor-img-container{
-        grid-template-columns: repeat(3 , 1fr);
-        gap: 20px;
-    }
-    .feature-card-img{
-        flex-direction: column;
-        gap: 20px;
-        flex-direction: column-reverse;
-    }
-    .feature-card-img .img-container img{
-        width: 100%;
-    }
-    .features-you-will #btn-id{
-        margin: 10px auto;
-    }
 }
