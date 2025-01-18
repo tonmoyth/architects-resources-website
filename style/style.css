@@ -144,8 +144,40 @@
     width: 100%;
     filter: grayscale(100%);
 }
-
-
+/* style features-you-will */
+.features-you-will{
+    margin: 80px 0px;
+}
+.features-you-will .feature-card-img{
+    display: flex;
+    column-gap: 100px;
+}
+.features-you-will .tittle-container .features-tittle{
+    font-size: 2.3rem;
+    border-left: 5px solid #FF900E;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.features-you-will .card{
+    margin: 30px 0px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(66, 66, 66,0.2);
+}
+.features-you-will .card .card-tittle{
+    margin-bottom: 15px;
+}
+.features-you-will #btn-id{
+    padding: 35px;
+    margin-top: -100px;
+    margin-left: -70px;
+}
+.features-you-will .year{
+    font-size: 2.5rem;
+    font-weight: 400px;
+}
+.features-you-will .Experience{
+    margin-top: 10px;
+}
 /* responsive area */
 @media screen and (max-width: 576px){
     .header .nav-bar, .header .nav-bar .item{
@@ -193,6 +225,17 @@
         width: 80%;
         margin: 10px auto;
     }
+    .feature-card-img{
+        flex-direction: column;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .feature-card-img .img-container img{
+        width: 100%;
+    }
+    .features-you-will #btn-id{
+        margin: 10px auto;
+    }
 }
 @media screen and (min-width: 576px) and (max-width:992px){
     .work-sans-font{
@@ -229,6 +272,18 @@
         width: 80%;
         margin: 20px auto;
     }
+    .feature-card-img{
+        flex-direction: column;
+        gap: 20px;
+        flex-direction: column-reverse;
+       text-align: center;
+    }
+    .feature-card-img .img-container img{
+        width: 100%;
+    }
+    .features-you-will #btn-id{
+        margin: 10px auto;
+    }
 }
 @media screen and (min-width: 992px) and (max-width:1200px){
     .work-sans-font{
@@ -261,5 +316,33 @@
         width: 80%;
         margin: 20px auto;
     }
+    .feature-card-img{
+        flex-direction: column;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .feature-card-img .img-container img{
+        width: 100%;
+    }
+    .features-you-will #btn-id{
+        margin: 10px auto;
+    }
     
+}
+@media screen and (min-width:1200px) and (max-width:1400px){
+    .some-facts .card-container, .our-sponsors .sponsor-img-container{
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 20px;
+    }
+    .feature-card-img{
+        flex-direction: column;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .feature-card-img .img-container img{
+        width: 100%;
+    }
+    .features-you-will #btn-id{
+        margin: 10px auto;
+    }
 }
